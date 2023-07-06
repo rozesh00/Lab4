@@ -23,16 +23,57 @@ public class Main {
         //Write a Java program that takes two numbers as input and displays the product of two numbers.
 
         Scanner readInput = new Scanner(System.in); //creating a scanner object
+//
+//        System.out.println("Enter first number");
+//        int firstNum = readInput.nextInt();
+//
+//        System.out.println("Enter second number");
+//        int secNum= readInput.nextInt();
+//
+//        int multi= firstNum*secNum;
+//
+//        System.out.println("multiplication: " + multi);
 
-        System.out.println("Enter first number");
-        int firstNum = readInput.nextInt();
 
-        System.out.println("Enter second number");
-        int secNum= readInput.nextInt();
+        //Write a  program that takes a number as input and prints its multiplication table up to 10.
+//        System.out.println("enter a number for table");
+//        int newNum = readInput.nextInt();
+//
+//        for (int i =1; i<=10; i++){
+//            int multip = newNum *i;
+//            System.out.println(newNum + "x" + i + "=" + multip);//if int i =1, then (i+1) while multiplying
+//            //System.out.println(newNum + " x " + (i+1) + " = " + (num1 * (i+1)));
+//
+//        }
+//
 
-        int multi= firstNum*secNum;
+        //Write a Java program to print the area and perimeter of a circle.
+        int radius = 7;
 
-        System.out.println("multiplication: " + multi);
+
+        double area = Math.PI * radius*radius;
+        System.out.println("Area of circle is: "+ area );
+
+        BasicJava newInst = new BasicJava();
+        newInst.decimalToBinary(19);
+
+        System.out.println("\n" +"decimal of 11001 is "+ newInst.binaryToDecimal(11001));
+
+
+        String originalStr= "There is a house in new orleans.";
+        System.out.println("reversed string is: " + "\n");
+        String reversedString = newInst.reverseString(originalStr);
+        System.out.println(reversedString);
+
+//        there is an exception when the method is declared as static. Static methods belong to
+//        the class itself rather than an instance of the class, and they can be called directly using the class name
+//        without the need for an object.
+        System.out.println("Reverse string using StringBuilder:");
+        String reverseStr= BasicJava.reverSting(originalStr);
+        System.out.println(reverseStr);
+
+        int charactersCount = BasicJava.countCharacters(originalStr);
+        System.out.println("the number of letters: " + charactersCount);
 
 
 
