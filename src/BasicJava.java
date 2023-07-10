@@ -135,12 +135,15 @@ public class BasicJava {
 
     }
 
-    public static void characterCount(String str){
-
-        char[]  arr= str.toCharArray();
+    
 
 
-    }
+
+
+
+
+
+
 
 
 

@@ -4,6 +4,14 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+
+        int[] numbers = {2, 4, 7, 8, 9, 0, 11, 16};
+        int ans = largestNum(numbers);
+        System.out.println("The greatest Number in the given array is: " + ans);
+
+
+
+
         //sum of two numbers
         int first = 55;
         int secon = 2;
@@ -77,5 +85,22 @@ public class Main {
 
 
 
+    }
+
+    public  static  int largestNum(int[] arr){
+
+        if (arr == null || arr.length ==0){
+            throw new IllegalArgumentException("array must not be empty");
+        }
+
+        //Double inf = Double.POSITIVE_INFINITY;
+        int largest =arr[0];
+
+        for(int i =1; i< arr.length; i++){
+            if (arr[i] > largest){
+                largest=arr[i];
+            }
+        }
+        return largest;
     }
 }
